@@ -14,7 +14,7 @@ Caso de uso 2: lance da partida
  2.1: Jogador seleciona o primeiro personagem, personagem 1 muda de cor. 
  2.2: Jogador seleciona segundo jogador. Entre eles aparece uma aresta direcionada, segundo personagem também muda de cor.
  2.3: Jogador seleciona a direção. Se acertar, marca um ponto; se errar, perde um ponto. Partida termina se alcançar 12 acertos,    ou se zerar os pontos que possui.
-    Pré-requisitos: Aparece uma lista em um quadro ao lado com as opções que o jogador pode escolher. 
+     Pré-requisitos: Aparece uma lista em um quadro ao lado com as opções que o jogador pode escolher. 
 
  
  
