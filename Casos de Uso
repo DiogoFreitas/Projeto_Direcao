@@ -1,4 +1,21 @@
 Casos de Usos
-realiza_jogada:
+#realiza_jogada:
 Jogador clica no objeto desenho /* uma das células da matriz */
-e aparece a mensagem: " A 'objeto.GetNome()' está a que direção:"
+e aparece a pergunta: " O 'objeto.GetNome()' está a que direção?"
+
+Podem haver 16 respostas, de acordo com:
+1 - Pontos cardeais:
+N,S, L, O.
+
+2 -Pontos colaterais
+NE, SE, NO ou NW, SO ou NW.
+
+3 -Pontos subcolaterais
+NNE - nor-nordeste, 
+ENE - és-noedeste, 
+ESE - és-sudeste, 
+SSE - su-sudeste, 
+SSO ou SSW - su-sudeste
+OSO ou WSW - óes-sudoeste
+ONO ou WNW - oés-noroeste
+NNO ou NNw - nor-noroeste
