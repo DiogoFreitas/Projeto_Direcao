@@ -1,0 +1,182 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package tabuleiro_jogo_ilha;
+
+/**
+ *
+ * @author LABCCET
+ */
+public class Tabuleiro_Jogo_Ilha {
+    int linha;
+    int coluna;
+
+    /*int casa [][]; /* nâo será declarado int. E sim instacias da classe personagens 
+    
+    public Tabuleiro_Jogo_Ilha(){
+        casa = new int[5][5];
+    }*/
+
+    /**
+     *
+     * @param i
+     * @param j
+     */
+    
+    public Tabuleiro_Jogo_Ilha(){
+    linha=0;
+    coluna=0;
+    }
+        
+    /* Retorna a que distância se encontra da posição central.*/
+    
+    public void Ponto( int i, int j){
+    
+    /* Quando clicar na célula, pega índices da matriz */        
+    
+        /* Estes índices podem ser passados pelo objeto personagem*/
+        /*Objeto personagem quarda indíces da posição */
+        
+        if (i==0 && j==0){
+        System.out.println(" NO: O objeto está a noroeste");
+        }else
+        if(i==0 && j==1){
+        System.out.println("NNO: O objeto está ao nor-noroeste");
+        }else
+        if(i==0 && j==2){
+        System.out.println("N: O objeto está ao norte");
+        }else
+        if(i==0 && j==3){
+        System.out.println("NNE: O objeto está ao nor-nordeste");
+        }else
+        if(i==0 && j==4){
+        System.out.println("NE: O objeto está a nordeste");
+        }else
+        if(i==1 && j==0){
+        System.out.println("NNE: O objeto está ao nor-nordeste");
+        }else
+        /*casa[1] [1]*/
+        /*Nível Básico: célula muito próxima da posição central da matriz*/
+        /* Acarreta mais possibilidas dos pontos N,S,L,O*/
+        
+        if(i==1 && j==1){
+        System.out.println("NO: O objeto está a NOROESTE");
+        }else
+        /*casa[1] [2]*/
+        /*Nível Básico: célula muito próxima da posição central da matriz*/
+        /* Acarreta mais possibilidas dos pontos N,S,L,O*/
+        
+        if(i==1 && j==2){
+        System.out.println("N: O objeto está a NORTE");
+        }else
+        /*casa[1] [3]*/
+        /*Nível Básico: célula muito próxima da posição central da matriz*/
+        /* Acarreta mais possibilidas dos pontos N,S,L,O*/
+        
+        if(i==1 && j==3){
+        System.out.println("NNE: O objeto está a NORDESTE");
+        }else
+        if(i==1 && j==4){
+        System.out.println("NNE: O objeto está ao és-nordeste");
+        }else
+        if(i==2 && j==0){
+        System.out.println("O ou W: O objeto está a Oeste");
+        }else
+        /*casa[2] [1]*/
+        /*Nível Básico: célula muito próxima da posição central da matriz*/
+        /* Acarreta mais possibilidas dos pontos N,S,L,O*/
+        
+        if(i==2 && j==1){
+        System.out.println("O ou W: O objeto está a Oeste");
+        }else
+        if(i==2 && j==2){
+        System.out.println("Posição Central na matriz 5x5, o referencial");
+        }else
+        /*casa[2] [3]*/
+        /*Nível Básico: célula muito próxima da posição central da matriz*/
+        /* Acarreta mais possibilidas dos pontos N,S,L,O*/
+        
+        if(i==2 && j==3){
+        System.out.println("E: O objeto está a LESTE");
+        }else
+        if(i==2 && j==4){
+        System.out.println("E: O objeto está a LESTE");
+        }else
+        if(i==3 && j==0){
+        System.out.println("OSO: O objeto está ao nor-nordeste");
+        }else
+        /*casa[3] [1]*/
+        /*Nível Básico: célula muito próxima da posição central da matriz*/
+        /* Acarreta mais possibilidas dos pontos N,S,L,O*/
+        
+        if(i==3 && j==1){
+        System.out.println("SO: O objeto está a SUDOESTE");
+        }else
+        /*casa[3] [2]*/
+        /*Nível Básico: célula muito próxima da posição central da matriz*/
+        /* Acarreta mais possibilidas dos pontos N,S,L,O*/
+        
+        if(i==3 && j==2){
+        System.out.println("S: O objeto está a SUL");
+        }else
+        /*casa[3] [3]*/
+        /*Nível Básico: célula muito próxima da posição central da matriz*/
+        /* Acarreta mais possibilidas de
+        /* pontos cardeis N,S,L,O*/
+        /* e pontos colaterais NE, SE, NO, SO */
+        
+        if(i==3 && j==3){
+        System.out.println("SE: O objeto está a SUDESTE");
+        }else
+        if(i==3 && j==4){
+        System.out.println("ESE: O objeto está ao és-sudeste");
+        }else
+        if (i==4 && j==0){
+        System.out.println(" SO: O objeto está a SUDOESTE");
+        }else
+        if(i==4 && j==1){
+        System.out.println("SSO: O objeto está ao SU-SUDOESTE");
+        }else
+        if(i==4 && j==2){
+        System.out.println("S: O objeto está a SUL");
+        }else
+        if(i==4 && j==3){
+        System.out.println("SSE: O objeto está ao SU-SUDESTE");
+        }else
+        if(i==4 && j==4){
+        System.out.println("SE: O objeto está a SUDESTE");
+        }
+        
+        
+        
+        
+    }
+    
+    
+            /**
+     * 
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+        Tabuleiro_Jogo_Ilha;
+        
+        /*
+       for(int i = 0; i < 5; i++){
+            for(int j = 0; j < 5; j++){
+            
+                System.out.println("Celula [ " + i + " ] [ " + j + " ]");
+                Tabuleiro_Jogo_Ilha(int i, int j);
+                
+            }
+        */
+        }
+        
+        
+        // TODO code application logic here
+    }
+    
+}
