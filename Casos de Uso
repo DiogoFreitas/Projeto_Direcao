@@ -4,13 +4,13 @@ Jogador clica no objeto desenho /* uma das células da matriz */
 e aparece a pergunta: " O 'objeto.GetNome()' está a que direção?"
 
 Podem haver 16 respostas, de acordo com:
-1 - Pontos cardeais:
+A- Pontos cardeais:
 N,S, L, O.
 
-2 -Pontos colaterais
+B-Pontos colaterais
 NE, SE, NO ou NW, SO ou NW.
 
-3 -Pontos subcolaterais
+C-Pontos subcolaterais
 NNE - nor-nordeste, 
 ENE - és-noedeste, 
 ESE - és-sudeste, 
