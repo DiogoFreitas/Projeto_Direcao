@@ -20,3 +20,6 @@ Caso de uso 2: lance da partida
  
  
  */
+ 
+ /* Ideia para tirar a posição fixa do objeto no centro da matriz Tabuleiro:
+ implementar a matriz 5x5 como uma "máscara", para constatar as distâncias dos objetos ao redor; */
