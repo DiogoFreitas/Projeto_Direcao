@@ -1,0 +1,4 @@
+Casos de Usos
+realiza_jogada:
+Jogador clica no objeto desenho /* uma das células da matriz */
+e aparece a mensagem: " A 'objeto.GetNome()' está a que direção:"
