@@ -68,7 +68,7 @@ for(int j=0;j<5;j++){
 	        System.out.println("NO: O objeto está a NOROESTE");
         	}else
 	        /*casa[1] [2]; Nível Básico: célula muito próxima da posição central da matriz; Acarreta mais possibilidas dos pontos N,S,L,O*/
-		if(i==1 && j==2){
+		if(j==2){
         	System.out.println("N: O objeto está a NORTE");
 	        }else
 	        /*casa[1] [3]*/
