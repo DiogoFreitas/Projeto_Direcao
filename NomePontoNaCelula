@@ -1,0 +1,285 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package agulha;
+import java.util.Scanner;
+
+/**
+ *
+ * @author LABCCET
+ */
+public class Agulha {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+        //printTabuleiro();
+        mostraNomePonto();
+        printTabuleiro();
+        
+        // TODO code application logic here
+    }
+    
+    
+  
+    
+    public static void printTabuleiro(){
+        
+
+		System.out.println("\t1 \t2 \t3 \t4 \t5 ");
+		System.out.println();
+
+
+        for(int i=0;i<5;i++){
+
+	for(int j=0;j<5;j++){
+	
+
+
+        if (i==0){
+
+		if(j==0){
+                System.out.print((i+1) + "");
+        	System.out.print("\t NO");
+	        }else
+        	if(j==1){
+	        System.out.print("\tNNO");
+	        }else
+        	if(j==2){
+	        System.out.print("\t N ");
+        	}else
+	        if(j==3){
+        	System.out.print("\tNNE");
+	        }else
+	        if(j==4){
+	        System.out.print("\t NE");
+	        System.out.println();
+	        }
+	}else
+	if(i==1){
+		if(j==0){
+		System.out.print((i+1) + "");
+	        System.out.print("\tNNE");
+        	}else
+	        /*casa[1] [1]; Nível Básico: célula muito próxima da posição central da matriz; Acarreta mais possibilidas dos pontos N,S,L,O*/
+        	if(j==1){
+	        System.out.print("\t NO");
+        	}else
+	        /*casa[1] [2]; Nível Básico: célula muito próxima da posição central da matriz; Acarreta mais possibilidas dos pontos N,S,L,O*/
+		if(j==2){
+        	System.out.print("\t N ");
+	        }else
+	        /*casa[1] [3]*/
+	        /*Nível Básico: célula muito próxima da posição central da matriz*/
+	        /* Acarreta mais possibilidas dos pontos N,S,L,O*/
+        
+        	if(j==3){
+	        System.out.print("\tNNE");
+	        }else
+	        if(j==4){
+	        System.out.print("\tENE");
+	        System.out.println();
+	        }
+	}else
+	if(i==2){
+
+		
+		if(j==0){
+		System.out.print((i+1) + "");
+	        System.out.print("\t O ");
+	        }else
+	        /*casa[2] [1]; Nível Básico: célula muito próxima da posição central da matriz; Acarreta mais possibilidas dos pontos N,S,L,O*/
+	        if(j==1){
+	        System.out.print("\t O ");
+	        }else
+	        if(j==2){
+	        System.out.print("\t + ");
+        	}else
+	        /*casa[2] [3]; Nível Básico: célula muito próxima da posição central da matriz; Acarreta mais possibilidas dos pontos N,S,L,O*/
+		if(j==3){
+	        System.out.print("\t E ");
+	        }else
+        	if(j==4){
+	        System.out.print("\t E ");
+	        System.out.println();
+        	}
+	}else
+	if(i==3){
+		if(j==0){
+                System.out.print((i+1) + "");
+	        System.out.print("\tOSO");
+	        }else
+        	/*casa[3] [1]; Nível Básico: célula muito próxima da posição central da matriz; Acarreta mais possibilidas dos pontos N,S,L,O*/
+		if(j==1){
+	        System.out.print("\t SO");
+        	}else
+	        /*casa[3] [2]; Nível Básico: célula muito próxima da posição central da matriz; Acarreta mais possibilidas dos pontos N,S,L,O*/
+		if(i==3 && j==2){
+	        System.out.print("\t S ");
+	        }else
+	        /*casa[3] [3]; Nível Básico: célula muito próxima da posição central da matriz; Acarreta mais possibilidas de pontos cardeis N,S,L,O; e pontos colaterais NE, SE, 		NO, SO */
+		if(j==3){
+	        System.out.print("\t SE");
+	        }else
+        	if(j==4){
+	        System.out.print("\tESE");
+	        System.out.println();
+	        }
+	}else
+        if (i==4){
+		if(j==0){
+                System.out.print((i+1) + "");
+	        System.out.print("\t SO");
+	        }else
+        	if(j==1){
+	        System.out.print("\tSSO");
+	        }else
+	        if(j==2){
+	        System.out.print("\t S ");
+	        }else
+	        if(j==3){
+	        System.out.print("\tSSE");
+	        }else
+	        if(j==4){
+	        System.out.print("\t SE");
+	        System.out.println();
+	        }        
+        }
+}
+}
+        
+   }
+    
+ public static void mostraNomePonto(){
+
+int x, y;
+
+Scanner entrada = new Scanner(System.in);
+
+        
+System.out.println("Digite o numero da linha de 1 a 5");
+
+x = entrada.nextInt();
+x--;
+
+System.out.println("Digite o numero da coluna de 1 a 5");
+y = entrada.nextInt();
+y--;
+
+
+System.out.println("O ponto na celula " + x + "  " + y + ":  ");
+
+
+
+
+
+
+        if (x==0){
+		if(y==0){
+        	System.out.println(" NO: noroeste");
+	        }else
+        	if(y==1){
+	        System.out.println("NNO: nor-noroeste");
+	        }else
+        	if(y==2){
+	        System.out.println("N: norte");
+        	}else
+	        if(y==3){
+        	System.out.println("NNE: nor-nordeste");
+	        }else
+	        if(y==4){
+	        System.out.println("NE: nordeste");
+	        }
+	}else
+	if(x==1){
+		if(y==0){
+	        System.out.println("NNE: nor-nordeste");
+        	}else
+	        /*casa[1] [1]; Nível Básico: célula muito próxima da posição central da matriz; Acarreta mais possibilidas dos pontos N,S,L,O*/
+        	if(y==1){
+	        System.out.println("NO: NOROESTE");
+        	}else
+	        /*casa[1] [2]; Nível Básico: célula muito próxima da posição central da matriz; Acarreta mais possibilidas dos pontos N,S,L,O*/
+		if(y==2){
+        	System.out.println("N: NORTE");
+	        }else
+	        /*casa[1] [3]*/
+	        /*Nível Básico: célula muito próxima da posição central da matriz*/
+	        /* Acarreta mais possibilidas dos pontos N,S,L,O*/
+        
+        	if(y==3){
+	        System.out.println("NNE: NORDESTE");
+	        }else
+	        if(y==4){
+	        System.out.println("ENE: és-nordeste");
+	        }
+	}else
+	if(x==2){
+		if(y==0){
+	        System.out.println("O ou W: Oeste");
+	        }else
+	        /*casa[2] [1]; Nível Básico: célula muito próxima da posição central da matriz; Acarreta mais possibilidas dos pontos N,S,L,O*/
+	        if(y==1){
+	        System.out.println("O ou W: Oeste");
+	        }else
+	        if(y==2){
+	        System.out.println("Posição Central na matriz 5x5, o referencial");
+        	}else
+	        /*casa[2] [3]; Nível Básico: célula muito próxima da posição central da matriz; Acarreta mais possibilidas dos pontos N,S,L,O*/
+		if(y==3){
+	        System.out.println("E: LESTE");
+	        }else
+        	if(y==4){
+	        System.out.println("E: LESTE");
+        	}
+	}else
+	if(x==3){
+		System.out.println("Linha" + x);
+		System.out.println("Coluna" + y);
+		if(y==0){
+	        System.out.println("OSO: nor-nordeste");
+	        }else
+        	/*casa[3] [1]; Nível Básico: célula muito próxima da posição central da matriz; Acarreta mais possibilidas dos pontos N,S,L,O*/
+		if(y==1){
+	        System.out.println("SO: SUDOESTE");
+        	}else
+	        /*casa[3] [2]; Nível Básico: célula muito próxima da posição central da matriz; Acarreta mais possibilidas dos pontos N,S,L,O*/
+		if(y==2){
+	        System.out.println("S: SUL");
+	        }else
+	        /*casa[3] [3]; Nível Básico: célula muito próxima da posição central da matriz; Acarreta mais possibilidas de pontos cardeis N,S,L,O; e pontos colaterais NE, SE, 		NO, SO */
+		if(y==3){
+	        System.out.println("SE: SUDESTE");
+	        }else
+        	if(y==4){
+	        System.out.println("ESE: és-sudeste");
+	        }
+	}else
+	if (x==4){
+		if(y==0){
+	        System.out.println(" SO: SUDOESTE");
+	        }else
+        	if(y==1){
+	        System.out.println("SSO: SU-SUDOESTE");
+	        }else
+	        if(y==2){
+	        System.out.println("S: SUL");
+	        }else
+	        if(y==3){
+	        System.out.println("SSE: SU-SUDESTE");
+	        }else
+	        if(y==4){
+	        System.out.println("SE: SUDESTE");
+	        }        
+	}
+
+}
+
+}  
+
+
