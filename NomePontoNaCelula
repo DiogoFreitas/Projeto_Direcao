@@ -18,7 +18,7 @@ public class Agulha {
      */
     public static void main(String[] args) {
         
-        //printTabuleiro();
+        printTabuleiro();
         mostraNomePonto();
         printTabuleiro();
         
